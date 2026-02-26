@@ -7,13 +7,19 @@ export function useClickableHover() {
     const handleMouseMove = (e) => {
       const element = document.elementFromPoint(e.clientX, e.clientY)
       
-      // Check ob über einem clickbaren Element
       const isClickable = 
         element?.tagName === 'BUTTON' ||
         element?.tagName === 'A' ||
+        element?.getAttribute('role') === 'button' ||
         element?.style?.cursor === 'pointer' ||
         element?.closest('button') ||
-        element?.closest('a')
+        element?.closest('a') ||
+        element?.closest('[role="button"]')
+      
+      // DEBUG
+      if (element?.style?.cursor === 'pointer') {
+        console.log('Found clickable element:', element.tagName, element.getAttribute('role'))
+      }
       
       setIsHoveringClickable(!!isClickable)
     }
