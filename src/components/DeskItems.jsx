@@ -109,30 +109,30 @@ return (
           }}
         >
           {/* Farbiger Schatten – gleiches Bild, nur unscharf und verschoben */}
-<img
-  src={item.src}
-  style={{
-    width: '100%',
-    transform: `rotate(${item.rotation}deg)`,
-    display: 'block',
-    position: 'absolute',
-    top: '8px',
-    left: '-6px',
-    filter: 'blur(8px) opacity(0.5)',
-    zIndex: 0,
-  }}
-/>
-{/* Das eigentliche Bild oben drauf */}
-<img
-  src={item.src}
-  style={{
-    width: '100%',
-    transform: `rotate(${item.rotation}deg)`,
-    display: 'block',
-    position: 'relative',
-    zIndex: 1,
-  }}
-/>
+          <img
+            src={item.src}
+            style={{
+              width: '100%',
+              transform: `rotate(${item.rotation + (positions.current[i]?.tilt || 0)}deg)`,
+              display: 'block',
+              position: 'absolute',
+              top: '8px',
+              left: '-6px',
+              filter: 'blur(8px) opacity(0.5)',
+              zIndex: 0,
+            }}
+          />
+          {/* Das eigentliche Bild oben drauf */}
+          <img
+            src={item.src}
+            style={{
+              width: '100%',
+              transform: `rotate(${item.rotation + (positions.current[i]?.tilt || 0)}deg)`,
+              display: 'block',
+              position: 'relative',
+              zIndex: 1,
+            }}
+          />
         </div>
       ))}
     </div>

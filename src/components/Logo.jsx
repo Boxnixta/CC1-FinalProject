@@ -18,7 +18,7 @@ export default function Logo() {
       <img
         src="/grafiken/logo.png"
         style={{
-          width: '150px',
+          width: '120px',
           height: 'auto',
           // filter: 'drop-shadow(2px 3px 4px rgba(0,0,0,0.2))',
           animation: isHovering ? 'wiggle 0.5s ease-in-out infinite' : 'none',
