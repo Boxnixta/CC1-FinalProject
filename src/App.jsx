@@ -31,15 +31,19 @@ export default function App() {
           
           <div style={{
             textAlign: 'center',
-            fontFamily: 'sans-serif',
+            fontFamily: '"Helvetica", sans-serif',
             fontSize: '16px',
             lineHeight: '1.6',
             maxWidth: '400px',
             zIndex: 1,
             pointerEvents: 'none',
           }}>
-            <p>Bonita von Gizycki</p>
-            <p>Designer und Creative Technologist ✩‧༺☆⋆.˚✮˚.⋆☆༻‧✩ 2D & 3D Grafikdesign (und UX/UI), Coding, Illustration, Storytelling, Animation & Film. (*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ</p>
+            <p>Hallo, ich bin Bonita von Gizycki</p>
+            <p>Designer und Creative Technologist</p> 
+            <p>⋆ ✩ ‧ ༺☆ ⋆ . ˚ ✮ ˚ . ⋆ ☆༻ ‧ ✩ ⋆</p>
+            <p>2D & 3D Grafikdesign (und UX/UI & CI),</p>
+            <p>Coding, Illustration, Animation & Film.</p> 
+            <p>(*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ</p>
           </div>
 
           <DeskItems />
