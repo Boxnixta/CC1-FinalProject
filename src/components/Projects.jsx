@@ -339,7 +339,7 @@ useEffect(() => {
       width: '100%',
       minHeight: '200vh',
       background: 'white',
-      padding: '60px 40px 40px 40px',
+      padding: '300px 40px 40px 40px',
       position: 'relative',
       overflow: 'hidden',
     }}>
